@@ -120,6 +120,7 @@
 		button.cookie-accept {
 			display: flex;
 			align-items: center;
+			justify-content: center;
 		}
 
 		.cookie-double-btn button {
@@ -196,11 +197,6 @@
 				margin: 0px 15px;
 			}
 
-			.cookie-double-btn button {
-				font-size: 15px;
-				padding: 8px 20px;
-			}
-
 			.cookie-overlay{
 				display: none;
 			}
@@ -217,19 +213,16 @@
 				font-size: 15px;
 			}
 
-			.cookie-img {
-				position: relative;
-				left: -15px;
+			.cookie-double-btn{
+				display: flex;
+				flex-direction: column-reverse;
+				gap: 12px;
 			}
 
-			.cookie-img > img{
-				width: 100%;
-				height: auto;
+			.cookie-double-btn button{
+				margin: 0px;
 			}
 
-			.cookie-double-btn {
-				gap: 8px;
-			}
 		}
 
 		@media only screen and (max-width: 850px) and (min-width: 768px) {
